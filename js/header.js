@@ -1,4 +1,4 @@
 (function()
 {
-    $("#header").load("/TDL-PROJECT/html/header.html");
+    $("#header").load("/html/header.html");
 })(jQuery);

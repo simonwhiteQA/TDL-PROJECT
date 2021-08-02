@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Update</title>
@@ -19,12 +20,59 @@
         <p class="lead">Update an item currently in the do list</p>
     </div>
 
-    <div>
-        <ul id="myUL">
-            <li><a>read all from to do list</a></li>
-        </ul>
+    <div class="row">
+        <div class="col-sm-6" style="padding: 30px;">
+            <div class="row">
+            <div class="col-sm-5">
+            <h3 class="card-title">Your 'To Do List'</h3>
+            </div>
+            <div class="col-sm-4">
+            <form class="d-flex">
+                <div id="search">
+                    <input class="bi bi-search" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search to do list.. " >
+                </div>
+            </form>
+        </div>
+        </div>
+            <ul id="myUL">
+                <li><a class="card-text">Go to the create page to add an item to the to do list.</a></li>
+                <li><a class="card-text">item</a></li>
+                <li><a class="card-text">test.</a></li>
+            </ul>
+        </div>
 
-    </div>
+        <div class="col-sm-6" style="padding: 30px;">
+            <h5 class="card-title">Update an item for the to do list</h5>
+            <div class="form-group">
+                <div class="form-group row">
+                    <div class="col-sm-2">
+                        <input class="form-control" id="category" placeholder="Item ID...">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <input class="form-control" id="category" placeholder="Enter the category...">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <select class="custom-select" required>
+                            <option value="">Set the priority...</option>
+                            <option value="HIGH">High</option>
+                            <option value="MEDIUM">Medium</option>
+                            <option value="LOW">Low</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="description" rows="5"
+                            placeholder="Enter the description here..."></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        </div>
 </body>
 
 <footer>
