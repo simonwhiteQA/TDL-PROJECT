@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Home</title>
-    <div id="header"></div>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Create</title>
+        <div id="header"></div>
+    </head>
 
 
 <body>
 
-    <div class="jumbotron">
-        <h1 class="display-4">Create</h1>
+    <div class="jumbotron" id="jumbo">
+        <h1 class="display-4">Create <i class="fa fa-plus-square-o" aria-hidden="true"></i></h1>
         <p class="lead">Create an item for the to do list below</p>
     </div>
 
@@ -34,7 +37,7 @@
             </form>
         </div>
         </div>
-            <ul id="myUL">
+            <ul class="list-group-item" id="myUL">
                 <li><a class="card-text">Go to the create page to add an item to the to do list.</a></li>
                 <li><a class="card-text">item</a></li>
                 <li><a class="card-text">test.</a></li>
@@ -65,7 +68,7 @@
                             placeholder="Enter the description here..."></textarea>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Create</button>
+                <button type="submit" class="btn btn-success">Create</button>
             </div>
         </div>
 
