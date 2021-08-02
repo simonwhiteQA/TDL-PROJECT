@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Delete</title>
-    <div id="header"></div>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Delete</title>
+        <div id="header"></div>
+    </head>
+    
 
 
 <body>
@@ -19,12 +21,63 @@
         <p class="lead">Delete an item from the to do list</p>
     </div>
 
-    <div>
-        <ul id="myUL">
-            <li><a>read all from to do list</a></li>
-        </ul>
+    <div class="row">
+        <div class="col-sm-6" style="padding: 30px;">
+            <div class="row">
+            <div class="col-sm-5">
+            <h3 class="card-title">Your 'To Do List'</h3>
+            </div>
+            <div class="col-sm-4">
+            <form class="d-flex">
+                <div id="search">
+                    <input class="bi bi-search" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search to do list.. " >
+                </div>
+            </form>
+        </div>
+        </div>
+            <ul id="myUL">
+                <li><a class="card-text">Go to the create page to add an item to the to do list.</a></li>
+                <li><a class="card-text">item</a></li>
+                <li><a class="card-text">test.</a></li>
+            </ul>
+        </div>
 
-    </div>
+        <div class="col-sm-6" style="padding: 30px;">
+            <h5 class="card-title">Delete an item from the to do list:</h5>
+                <div class="form-group row">
+                    <div class="col-sm-8" id="delete-id">
+                        <input class="form-control" placeholder="Enter the item id to delete...">
+                    </div>
+                <div class="container d-flex"> <button class="btn btn-danger " data-toggle="modal" data-target="#my-modal">Confirm Delete</button>
+                    <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content border-0">
+                                <div class="modal-body p-0">
+                                    <div class="card border-0 p-sm-2 p-2 justify-content-center">
+                                        <div class="card-header pb-0 bg-white border-0 ">
+                                            <div class="row">
+                                                <div class="col ml-auto"><button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button></div>
+                                            </div>
+                                            <p class="font-weight-bold mb-2"> Are you sure you wanna delete this ?</p>
+                                            <p class="text-muted "> There is no way to revert this decision once complete.</p>
+                                        </div>
+                                        <div class="card-body px-sm-4 mb-2 pt-1 pb-0">
+                                            <div class="row no-gutters">
+                                                <div class="col-auto"><button type="button" class="btn btn-danger px-4" data-dismiss="modal">Delete</button></div>
+                                                <div class="col-auto"><button type="button" class="btn btn-light text-muted" data-dismiss="modal">Cancel</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+          
+
+
 </body>
 
 <footer>
