@@ -1,4 +1,6 @@
-
+#jumbo {
+    background-color: rgb(147, 179, 231);
+}
 
 #myUL {
     padding: 20px;
@@ -6,4 +8,8 @@
 
 #delete-id {
     padding-bottom: 20px;
+}
+
+#header {
+    background-color: rgb(119, 161, 228);
 }
