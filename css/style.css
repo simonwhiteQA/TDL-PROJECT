@@ -1,5 +1,5 @@
 #jumbo {
-    background-color: seashell;
+    background-color: #ACE1AF;
 }
 
 #myUL {
@@ -11,7 +11,7 @@
 }
 
 #header {
-    background-color:rgb(241, 230, 221);
+    background-color:#32de84;
 }
 
 #delete-confirm {
@@ -19,6 +19,16 @@
 }
 
 #update {
-    background-color: green;
-    border: green;
+    background-color: #32de84;
+    border: #32de84;
+}
+
+#myInput {
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 4px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#search {
+    align-content: left;
 }
