@@ -1,5 +1,5 @@
 #jumbo {
-    background-color: rgb(147, 179, 231);
+    background-color: seashell;
 }
 
 #myUL {
@@ -11,9 +11,14 @@
 }
 
 #header {
-    background-color: lightgray;
+    background-color:rgb(241, 230, 221);
 }
 
 #delete-confirm {
     padding: 10px;
+}
+
+#update {
+    background-color: green;
+    border: green;
 }
