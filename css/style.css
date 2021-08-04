@@ -11,5 +11,9 @@
 }
 
 #header {
-    background-color: rgb(119, 161, 228);
+    background-color: lightgray;
+}
+
+#delete-confirm {
+    padding: 10px;
 }
