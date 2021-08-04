@@ -1,12 +1,12 @@
-fetch(`http://localhost:8080/Item/readAll`) // 1
+fetch(`http://localhost:8080/Item/readAll`) 
     .then((response) => {
-        if (response.status !== 200) {  //  2
+        if (response.status !== 200) {  
             console.error(`status: ${reponse.status}`);
             return;
         }
-        response.json() // 3
+        response.json() 
         .then(data => readAllItems(data))
-    }).catch((err)=> console.error(`Fetch Error: ${err}`)); // 5
+    }).catch((err)=> console.error(`Fetch Error: ${err}`)); 
 
 function readAllItems(data) {
     let toDoList = document.getElementById("myUL");
