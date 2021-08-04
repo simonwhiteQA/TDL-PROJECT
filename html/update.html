@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <title>Update</title>
-        <div id="header"></div>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Update</title>
+    <div id="header"></div>
+</head>
 
 
 <body>
@@ -26,21 +26,32 @@
 
     <div class="row">
         <div class="col-sm-6" style="padding: 30px;">
-            <div class="row">
-            <div class="col-sm-5">
-            <h3 class="card-title">Your 'To Do List'</h3>
-            </div>
-            <div class="col-sm-4">
-            <form class="d-flex">
-                <div id="search">
-                    <input class="bi bi-search" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search to do list.. " >
+            <form class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2 style="text-align: center;">Your 'To Do List' <i class="fa fa-tasks" id="TDL-icon"
+                                aria-hidden="true"></i></h2>
+                    </div>
+                    <div class="col-sm-6" id="search">
+                        <input class="bi bi-search" type="text" id="myInput" onkeyup="myFunction()"
+                            placeholder="Search by category... ">
+                    </div>
                 </div>
             </form>
-        </div>
-        </div>
-            <ul class="list-group-item" id="myUL">
-                
-            </ul>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#ID</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Priority</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+                    <tr id="rows"></tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="col-sm-6" style="padding: 30px;">
@@ -71,8 +82,9 @@
                         <textarea class="form-control" id="description" rows="5"
                             placeholder="Enter the description here..."></textarea>
                     </div>
-                </div >
-                <button value="Refresh" onclick="history.go(0)" type="submit" id="update" class="btn btn-primary">Create</button>
+                </div>
+                <button value="Refresh" onclick="history.go(0)" type="submit" id="update"
+                    class="btn btn-primary">Update</button>
             </div>
         </div>
 </body>
@@ -90,7 +102,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="../js/header.js"></script>
     <script type="text/javascript" src="../js/search.js"></script>
-    <script type="text/javascript" src="../js/readAll.js"></script>
+    <script type="text/javascript" src="../js/readPage.js"></script>
     <script type="text/javascript" src="../js/update.js"></script>
 </footer>
 
