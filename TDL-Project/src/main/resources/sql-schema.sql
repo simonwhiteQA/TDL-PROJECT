@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS item CASCADE;
+
+CREATE TABLE `item` (
+`id` BIGINT NOT NULL AUTO_INCREMENT, 
+`category` VARCHAR(255), 
+`description` VARCHAR(255), 
+`priority` VARCHAR(255), 
+PRIMARY KEY (`id`)
+);

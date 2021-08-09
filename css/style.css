@@ -1,0 +1,34 @@
+#jumbo {
+    background-color: #ACE1AF;
+}
+
+#myUL {
+    padding: 20px;
+}
+
+#delete-id {
+    padding-bottom: 20px;
+}
+
+#header {
+    background-color: #8FBC8B;
+}
+
+#delete-confirm {
+    padding: 10px;
+}
+
+#update {
+    background-color: #32de84;
+    border: #32de84;
+}
+
+#myInput {
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 4px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#search {
+    align-content: left;
+}
